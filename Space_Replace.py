@@ -1,9 +1,15 @@
 #!/usr/bin/env python
 
 from sys import argv
+from sys import exit
 import os
 
-path = os.getcwd()
+if len(argv) < 2:
+    exit('Not enough args')
+
+script, root_dir = argv
+
+path = root_dir
 
 filenames = os.listdir(path)
 
