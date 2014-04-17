@@ -47,3 +47,5 @@ Session.vim
 .netrwhist
 *~
 !*.sql
+
+test/
