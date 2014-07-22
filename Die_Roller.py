@@ -22,12 +22,12 @@ parser.add_argument("-a", "--add", action="store_true",
 args = parser.parse_args()
 
 number_of_sides = args.sides
-number_of_dice = args.dice
+number_of_dice  = args.dice
 
 def roll(dice, sides):
-    _min = 1
-    _max = sides
-    rolls = []
+    _min    = 1
+    _max    = sides
+    rolls   = []
 
     for i in range(dice):
         r = randint(_min, _max)
@@ -35,7 +35,7 @@ def roll(dice, sides):
         rolls.append(r)
     if args.add is not False:
         _sum = sum(rolls)
-        for
+        print '=' * 5
         print "The total of the rolls is %d" % _sum
 
 roll(number_of_dice, number_of_sides)
