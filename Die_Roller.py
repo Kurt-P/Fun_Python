@@ -57,7 +57,7 @@ def roll(dice, sides):
         rolls.append(r)
     if args.add is not False:
         _sum = sum(rolls)
-        print '=' * 5
+        print '=' * 5 ## Makes a break between the rolls and the sum
         print "The total of the rolls is %d" % _sum
 
 def roll_percentile():
@@ -78,3 +78,4 @@ else:
     print roll_percentile()
 
 ## END OF IMPLEMENTATION ##
+
