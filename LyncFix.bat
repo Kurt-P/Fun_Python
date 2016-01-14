@@ -22,6 +22,7 @@ taskkill.exe /F /IM lync.exe
 taskkill.exe /F /IM outlook.exe
 
 echo Please wait...
+timeout 2 >nul
 REG ADD "HKLM\Software\Policies\Microsoft\Office\15.0\Lync" /v "GALDownloadInitialDelay" /t REG_DWORD /d 0 /f
 REG ADD "HKLM\Software\Wow6432Node\Policies\Microsoft\Office\15.0\Lync" /v "GALDownloadInitialDelay" /t REG_DWORD /d 0 /f
 REG ADD "HKLM\Software\Policies\Microsoft\Communicator" /v "GALDownloadInitialDelay" /t REG_DWORD /d 0 /f
