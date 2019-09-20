@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-$(which id)
+$(which id) > USER_ID.TEXT
